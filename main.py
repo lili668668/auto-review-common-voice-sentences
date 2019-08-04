@@ -29,7 +29,7 @@ postData = {
   },
   'requests': []
 }
-timestamp = str(time.time()).split('.')[0]
+timestamp = int(str(time.time() * 1000).split('.')[0])
 
 
 def send(cnt):
@@ -59,7 +59,7 @@ def send(cnt):
     },
     'requests': []
   }
-  timestamp = str(time.time()).split('.')[0]
+  timestamp = int(str(time.time() * 1000).split('.')[0])
 
 for cnt in range(0, reviewNumber):
   template = {
