@@ -72,7 +72,9 @@ for cnt in range(0, reviewNumber):
         'last_modified': sentences[cnt]['last_modified'],
         'sentence': sentences[cnt]['sentence'],
         'source': sentences[cnt]['source'],
-        'username': sentences[cnt]['username']
+        'username': sentences[cnt]['username'],
+        'approved': True,
+        'approvalDate': timestamp
       }
     },
     'headers': {
